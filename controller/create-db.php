@@ -12,7 +12,7 @@
 	$exists = $connection->select_db($database); //try to access a database that exist on the mysql server
 													//selecting database, whether server will say whether database exists
 
-	if(!$exists){		//checking whether or not I was able to connect to the database
+	if(!$exists){		//checking whether or not I was able to connect to the database.  Only runs when the database doesn't exist 
 		$query = $connection->query("CREATE DATABASE $database");  //php will replace the variable $database with its value "blog_db".
 																	//creates a query that creates a connection to my server
 		if($query){ //checks whether $query was true or not
@@ -20,6 +20,10 @@
 			echo "successfully created database: " . $database; 
 		}
 
+	}
+
+	else{ //runs when database has already been created
+		echo "Database already exists";
 	}
 
 	$connection->close();
