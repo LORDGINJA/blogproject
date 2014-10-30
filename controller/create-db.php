@@ -26,4 +26,10 @@
 		echo "Database already exists"; //echoes this
 	}
 
+	$query = $connection->query("CREATE TABLE posts ("
+			. "id int(11) NOT NULL AUTO_INCREMENT, " //creates an id for each blogpost.  id cannot be null.  increments id integers
+			. "title varchar (255) NOT NULL" //stores title of blogpost.  can have up to 255 characters.  must have a title
+			. "post text NOT NULL, " //posts can't be empty
+			. "PRIMARY KEY (id)"); //sets primary key for table.  the way tables are connected to each other
+
 	$connection->close(); //this closes the connection
