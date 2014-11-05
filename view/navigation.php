@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ . "/../model/config.php");
+	require_once(__DIR__ . "/../model/config.php");  //allows navigation.php to acces config.php's contents
 ?>
 <nav>
 	<ul>

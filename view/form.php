@@ -2,12 +2,12 @@
 
 <form>
 	<div>
-		<label for="title"> Title: </label>
-		<input type="text" name="title"/>
+		<label for="title"> Title: </label> 	<!-- labels title box -->
+		<input type="text" name="title"/>	<!--	where title is inserted   -->
 	</div>
 
 	<div>
-		<label for="post"> Post: </label>
-		<textarea name="post"></textarea>
+		<label for="post"> Post: </label>  <!-- labels post box -->
+		<textarea name="post"></textarea> <!-- where post text is inserted -->
 	</div>
 </form>
