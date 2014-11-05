@@ -16,7 +16,6 @@
 		$query = $connection->query("CREATE DATABASE $database");  //php will replace the variable $database with its value "blog_db".
 																	//creates a query that creates a connection to my server
 		if($query){ //checks whether $query was true or not
-
 			echo "<p>successfully created database: " . $database . "</p>"; //echoes this
 		}
 
@@ -34,8 +33,7 @@
 
 
 	if($query){  //runs if the table is working
-    echo "<p>Succesfully create table: posts</p>";
-
+   		echo "<p>Succesfully create table: posts</p>";
 	}
 
 	else{  //says if the table already exists or if there is an error
