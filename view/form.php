@@ -10,4 +10,8 @@
 		<label for="post"> Post: </label>  <!-- labels post box -->
 		<textarea name="post"></textarea> <!-- where post text is inserted -->
 	</div>
+
+	<div>
+		<button type="submit"> Submit </button>  <!-- Inserts a submit button in the form page -->
+	</div>
 </form>
