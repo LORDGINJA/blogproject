@@ -1,6 +1,6 @@
 <?php
 
-	require_once(__DIR__ . "/../model/database.php");  //connects this page to the 
+	require_once(__DIR__ . "/../model/database.php");  //connects this file to the database file
 
 	$connection = new mysqli($host, $username, $password); //helps connect to database.php variables by putting them in an object.  this opens the connection
 
