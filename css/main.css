@@ -2,8 +2,16 @@ body{
 	background-color: blue;
 }
 
+#title{
+	background-color: yellow;
+}
+
+#post{
+	color: green;
+}
+
 @media screen and (max-width: 40em) {
-	html{
+	body{
 		background-color: red;
 		}
 }
