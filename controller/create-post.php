@@ -1,6 +1,6 @@
 <?php
 
-	require_once(__DIR__ . "/../model/database.php"); //gives access to variables listed below
+	require_once(__DIR__ . "/../model/config.php"); //gives access to variables listed in $connection
 
 	$connection = new mysqli($host, $username, $password, $database);  //creates connection to database and stores the connection in the $connection variable.
 
