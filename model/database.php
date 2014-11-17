@@ -6,11 +6,17 @@
 		private $password;
 		private $databse;
 		
-		public function __construct($host, $username, $password, $databse){  //allows me to use objects of the Databse class.  Parameters allow us to use the global variables for this function
+		public function __construct($host, $username, $password, $databse){  //allows me to use objects of the Databse class.        Defines class. Parameters allow us to use the global variables for this function
 			$this->host = $host;  //accesses the global variable $host
 			$this->username = $username;  //these are local variables
 			$this->password = $password;  //they are deleted when this function is finished.
 			$this->database = $database;
 		}
+
+		public function openConnection(){}  //used to hold repetitive code
+
+		public function closeConnection(){}  //input the code into the function and insert the function name where ever the code should go
+
+		public function query($string){}
 
 	}
