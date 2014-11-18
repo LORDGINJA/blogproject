@@ -13,9 +13,17 @@
 			$this->database = $database;
 		}
 
-		public function openConnection(){}  //used to hold repetitive code
+		public function openConnection(){  //used to hold repetitive code.  specifically the connection opener
+			$this->connection = new mysqli($this->host, $this->username, $this->password); //accesses the local variables from the construct function
 
-		public function closeConnection(){}  //input the code into the function and insert the function name where ever the code should go
+			if($this->connection->connect_error){ //runs if there is no connecton to database.php and hte variables aren't getting read
+				die("Error: "  . $connection->connect_error); //eschoes that there is an error
+			}
+
+		}
+		public function closeConnection(){  //input the code into the function and insert the function name where ever the code should go
+
+		}
 
 		public function query($string){}
 

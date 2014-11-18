@@ -6,11 +6,15 @@
 
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);  //stores title and makes it harder to hack
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);	//stores post and makes it harder to hack
+	$date = new DateTime('today');
 
 	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'"); //stores title and post into database
 
 	if ($query) {	//runs if the query was stored
 		echo "<p>Successfully inserted post: $title</p>";
+		echo "<p><img src='http://www.growhack.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-01-at-3.07.41-PM.png'></p>";
+		echo "Posted on: " . $date->format('m/d/y');
+
 	}
 
 	else{  //runs if the query wasn't stored
