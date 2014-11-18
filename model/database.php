@@ -22,7 +22,9 @@
 
 		}
 		public function closeConnection(){  //input the code into the function and insert the function name where ever the code should go
-
+			if(isset($this->connection)){
+				$this->connection->close();
+			}
 		}
 
 		public function query($string){}
