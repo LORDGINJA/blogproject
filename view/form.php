@@ -15,7 +15,9 @@
 		<textarea name="post"></textarea> <!-- where post text is inserted -->
 	</div>
 
-	<div>
-		<button type="submit"> Submit </button>  <!-- Inserts a submit button in the form page -->
-	</div>
+	<button type="submit" class="btn btn-primary btn-lg" class="headingbutton" data-toggle="modal" data-target="#myModal">
+				    submit
+						
+	  <!-- Inserts a submit button in the form page -->
+	</button>
 </form>

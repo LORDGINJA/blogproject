@@ -13,7 +13,7 @@
 
 	if ($query) {	//runs if the query was stored
 		echo "<p>Successfully inserted post: $title</p>";
-		echo "Posted on: " . $date->format('M/D' . ' ' . 'd/Y') . " at " . $time->format('G:i');
+		echo "Posted on: " . $date->format('M/D' . ' ' . 'd/Y') . " at " . $time->format('g:i';
 		echo "<p><img src='http://www.growhack.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-01-at-3.07.41-PM.png'></p>";
 
 	}

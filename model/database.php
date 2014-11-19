@@ -38,7 +38,16 @@
 				$this->connection->close();
 			}
 		}
-
-		public function query($string){}
+		//the query function takes a string of text and uses it to query the database at $query
+		public function query($string){ 
+			//runs the openConnection() function
+			$this->openConnection();
+			//executes a query on the database
+			$query = $this->connection->query($string);  
+			//runs the closeConnection() function
+			$this->closeConnection();  
+			//returns the results of the query
+			return $query; 
+		}
 
 	}
