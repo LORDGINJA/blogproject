@@ -2,8 +2,6 @@
 
 	require_once(__DIR__ . "/../model/config.php");  //connects this file to the config file
 
-	$connection = new mysqli($host, $username, $password); //helps connect to database.php variables by putting them in an object.  this opens the connection
-
 	if($connection->connect_error){ //runs if there is no connecton to database.php and hte variables aren't getting read
 		die("Error: "  . $connection->connect_error); //eschoes that there is an error
 	}

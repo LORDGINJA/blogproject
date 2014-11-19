@@ -2,8 +2,6 @@
 
 	require_once(__DIR__ . "/../model/config.php"); //gives access to variables listed in $connection
 
-	$connection = new mysqli($host, $username, $password, $database);  //creates connection to database and stores the connection in the $connection variable.
-
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);  //stores title and makes it harder to hack
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);	//stores post and makes it harder to hack
 	$date = new DateTime('today');
@@ -22,4 +20,3 @@
 		echo "<p>$connection->error</p>";
 	}
 
-	$connection -> close();  //closes connection
