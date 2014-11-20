@@ -1,10 +1,12 @@
 <?php
-	require_once(__DIR__ . "/../model/config.php");  //allows navigation.php to acces config.php's contents
+	//allows navigation.php to acces config.php's contents
+	require_once(__DIR__ . "/../model/config.php");  
 ?>
 <nav>
 	<ul>
 		<li>
-			<a href="<?php echo $path . "post.php"?>"> Blog Post form </a> <!-- links the config file to the home page -->
+			<!-- links the config file to the home page -->
+			<a href="<?php echo $path . "post.php"?>"> Blog Post form </a> 
 		</li>
 	</ul>
 

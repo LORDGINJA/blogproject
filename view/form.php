@@ -3,21 +3,23 @@
 ?>
 
 <h1>Create Blog Post</h1>
-
-<form method = "post" action = "<?php echo $path . "controller/create-post.php"; ?>">  <!-- sends post data to create-post.php and echoes the data -->
+<!-- sends post data to create-post.php and echoes the data -->
+<form method = "post" action = "<?php echo $path . "controller/create-post.php"; ?>"> 
 	<div id="title">
-		<label for="title"> Title: </label> 	<!-- labels title box -->
-		<input type="text" name="title"/>	<!--	where title is inserted   -->
+		<!-- labels title box -->
+		<label for="title"> Title: </label> 	
+		<!--	where title is inserted   -->
+		<input type="text" name="title"/>	
 	</div>
 
 	<div id="post">
-		<label for="post"> Post: </label>  <!-- labels post box -->
-		<textarea name="post"></textarea> <!-- where post text is inserted -->
+		<!-- labels post box -->
+		<label for="post"> Post: </label>  
+		<!-- where post text is inserted -->
+		<textarea name="post"></textarea> 
 	</div>
-
+	<!-- Inserts a submit button in the form page -->
 	<button type="submit" class="btn btn-primary btn-lg" class="headingbutton" data-toggle="modal" data-target="#myModal">
-				    submit
-						
-	  <!-- Inserts a submit button in the form page -->
+		submit
 	</button>
 </form>
