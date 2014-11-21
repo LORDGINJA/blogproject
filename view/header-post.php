@@ -11,7 +11,6 @@
 		</head>
 		
 		<header>
-			WELCOME TO MAX'S BLOG
 		</header>
 		<body>
 			

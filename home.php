@@ -8,5 +8,7 @@
 			//allows home.php to acces footer.php's contents
 			require_once(__DIR__ . "/view/footer.php");  
 		?>
+
+		
 	
 
