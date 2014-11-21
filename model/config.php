@@ -1,6 +1,11 @@
 <?php
 
 	require_once(__DIR__ . "/Database.php");
+	//starts the session
+	session_start();
+
+
+
 	//displays the post page
 	$path = "/blogproject/"; 
 	//a variable that stores the string "localhost"
@@ -11,5 +16,11 @@
 	$password = "root"; 
 	//a variable that stores the string "blog_db"
 	$database = "blog_db";
-	$connection = new Database($host, $username, $password, $database);
-?>
+
+	//checks if the session variable exists.  if it doesn't, the connection gets created
+	if(!isset($_SESSION["connection"])){
+
+		$connection = new Database($host, $username, $password, $database);
+		//session variable.  saves database object so that it only gets created once
+		$_SESSION["connection"] = $connection;
+	}

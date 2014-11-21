@@ -8,7 +8,7 @@
 	$date = new DateTime( 'today');
 	$time = new DateTime( 'America/Los_Angeles');
 	//stores title and post into database
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post' "); 
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post' "); 
 	
 	//runs if the query was stored
 	if ($query) {	
@@ -23,6 +23,6 @@
 	
 	//runs if the query wasn't stored
 	else{  
-		echo "<p>$connection->error</p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
