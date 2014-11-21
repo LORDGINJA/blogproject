@@ -10,9 +10,9 @@
 			//posts can't be empty
 			. "post text NOT NULL, " 
 
-			. "date DATE NOT NULL ,"
+			. "date DateTime NOT NULL ,"
 
-			. "time TIME NOT NULL ," 
+			. "time TimeStamp NOT NULL ," 
 			//sets primary key for table.  the way tables are connected to each other
 			. "PRIMARY KEY (id))"); 
 
