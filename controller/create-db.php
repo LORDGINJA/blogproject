@@ -22,6 +22,6 @@
 	}
 	//says if the table already exists or if there is an error
 	else{  
-		echo " <p>$this->connection->error</p>";
+		echo " <p>$connection->error</p>";
 	}
 

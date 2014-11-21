@@ -8,6 +8,7 @@
 		private $username;
 		private $password;
 		private $database;
+		//this variable is public so that we can access it in create-db.php
 		public $error;
 		
 		//allows me to use objects of the Databse class. Defines class. Parameters allow us to use the global variables for this function
@@ -20,20 +21,20 @@
 			$this->password = $password;  
 			$this->database = $database;
 
-			//helps connect to database.php variables by putting them in an object.  this opens the connection
-			$connection = new mysqli($host, $username, $password); 
+			//helps connect to Database.php variables by putting them in an object.  this opens the connection.  
+			$this->connection = new mysqli($host, $username, $password); 
 			//runs if there is no connecton to database.php and hte variables aren't getting read
-			if($connection->connect_error){ 
+			if($this->connection->connect_error){ 
 				//eschoes that there is an error
-				die("Error: "  . $connection->connect_error); 
+				die("Error: "  . $this->connection->connect_error); 
 			}
 			
 			//try to access a database that exist on the mysql server. selecting database, whether server will say whether database exists
-			$exists = $connection->select_db($database); 
+			$exists = $this->connection->select_db($database); 
 			//checking whether or not I was able to connect to the database.  Only runs when the database doesn't exist 
 			if(!$exists){
 				//php will replace the variable $database with its value "blog_db". creates a query that creates a connection to my server
-				$query = $connection->query("CREATE DATABASE $database");  
+				$query = $this->connection->query("CREATE DATABASE $database");  
 				//checks whether $query was true or not												
 				if($query){ 
 					//echoes that the database was created
@@ -72,8 +73,9 @@
 			$this->openConnection();
 			//executes a query on the database
 			$query = $this->connection->query($string);  
-			
+			//checks whether or not the query is false, then echoes out what went wrong
 			if(!$query){
+				//connects to the publiv variable "error" to find the source of error
 				$this->error = $this->connection->error;
 			}
 

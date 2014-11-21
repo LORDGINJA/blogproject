@@ -7,14 +7,14 @@
 <form method = "post" action = "<?php echo $path . "controller/create-post.php"; ?>"> 
 	<div id="title">
 		<!-- labels title box -->
-		<label for="title"> Title: </label> 	
+		<label id= "titlename" for="title"> Title: </label> 	
 		<!--	where title is inserted   -->
-		<input type="text" name="title"/>	
+		<input id ="titlebox" type="text" name="title"/>	
 	</div>
 
 	<div id="post">
 		<!-- labels post box -->
-		<label for="post"> Post: </label>  
+		<label class="post" for="post"> Post: </label>  
 		<!-- where post text is inserted -->
 		<textarea name="post"></textarea> 
 	</div>

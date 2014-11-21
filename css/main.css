@@ -1,12 +1,7 @@
 body{
 	background-color: blue;
 }
-
-#title{
-	background-color: yellow;
-}
-
-#post{
+.post{
 	color: green;
 }
 
@@ -14,5 +9,10 @@ body{
 	body{
 		background-color: red;
 		}
+}
+
+.titlebox{
+	background-color: black;
+	color: white;
 }
 
