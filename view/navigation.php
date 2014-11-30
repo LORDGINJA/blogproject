@@ -4,10 +4,10 @@
 ?>
 <nav>
 	<ul>
-		<li>
-			<!-- links the config file to the home page -->
-			<a href="<?php echo $path . "post.php"?>"> Blog Post form </a> 
-		</li>
+		<!-- links the config file to the home page -->
+		<button type="button" class="btn btn-default btn-lg">
+			<a href="<?php echo $path . "post.php"?>"> Blog Post form </a>
+		</button>
 	</ul>
 
 </nav>
