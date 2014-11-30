@@ -5,7 +5,9 @@
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);  
 	//stores post and makes it harder to hack
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);	
+	//stores the current date
 	$date = new DateTime( 'today');
+	//stores the current time of the Los Angeles, America timezone
 	$time = new DateTime( 'America/Los_Angeles');
 	//stores title and post into database
 	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post' "); 

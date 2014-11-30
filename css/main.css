@@ -1,9 +1,7 @@
 body{
-	background-color: blue;
+	text-align: center;
 }
-.post{
-	color: green;
-}
+
 
 @media screen and (max-width: 40em) {
 	body{
@@ -11,8 +9,5 @@ body{
 		}
 }
 
-.titlebox{
-	background-color: black;
-	color: white;
-}
+
 

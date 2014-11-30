@@ -3,7 +3,7 @@
 	<html>
 		<head>
 			<!-- links css to home page -->
-			<link rel="stylesheet" type="text/css" href="css/main.css"> 
+			<link rel="stylesheet" type="text/css" href="css/post.css"> 
 			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 			<link rel="stylesheet" type="text/css" href="css/boostrap.css">
 			<meta charset="UTF-8">
@@ -11,6 +11,7 @@
 		</head>
 		
 		<header>
+			
 		</header>
 		<body>
 			

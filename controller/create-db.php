@@ -9,10 +9,8 @@
 			. "title varchar (255) NOT NULL, " 
 			//posts can't be empty
 			. "post text NOT NULL, " 
-
-			. "date DateTime NOT NULL ,"
-
-			. "time TimeStamp NOT NULL ," 
+			//inputs the date and time the post was submitted into the database
+			. "DateTime datetime NOT NULL ,"
 			//sets primary key for table.  the way tables are connected to each other
 			. "PRIMARY KEY (id))"); 
 
