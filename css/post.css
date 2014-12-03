@@ -29,9 +29,3 @@ body{
 		}
 }
 
-
-@media screen and (max-width: 460px) {
-	body{
-		background-color: red;
-		}
-}
