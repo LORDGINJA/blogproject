@@ -23,3 +23,22 @@
 		echo " <p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
+	//creating a table to store users' usernames, emails, and passwords in phpMyAdmin.  pretty much the same as previous table
+	$query = $_SESSION["connection"]->query("CREATE TABLE users ("
+		. "id int(11) NOT NULL AUTO_INCREMENT, "
+		. "username varchar(30) NOT NULL, "
+		. "email varchar(50) NOT NULL, "
+		. "password char(128) NOT NULL, "
+		. "salt char(128) NOT NULL, "
+		. "PRIMARY KEY (id))");
+
+	//lets me know that the users' database has been created
+	if($query){
+		echo "<p> Successfully created table: users </p>";
+	}
+
+
+	//if the database hasn't been created, this echoes out the error
+	else{
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
