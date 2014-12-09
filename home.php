@@ -7,6 +7,8 @@
 			require_once(__DIR__ . "/controller/create-db.php");  
 			//allows home.php to acces footer.php's contents
 			require_once(__DIR__ . "/view/footer.php");  
+			//displays already posted posts on index page
+			require_once(__DIR__ . "/controller/read-posts.php");
 		?>
 
 		
