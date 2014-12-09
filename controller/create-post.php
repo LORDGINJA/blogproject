@@ -1,3 +1,4 @@
+
 <?php
 	//gives access to variables listed in $connection
 	require_once(__DIR__ . "/../model/config.php"); 
@@ -20,7 +21,7 @@
 		//echoes out that the title was successfully inserted and the name of the title
 		echo "<p>$title</p>";
 
-		echo ' moreLink: <a href="/js/main.js">Read more</a>; ';
+		echo "<p>$post(10)</p>";
 		//echoes out the date and time of when the post was submitted
 		echo "Posted on: " . $date->format('M/D' . ' ' . 'd/Y') . " at " . $time->format('g:i');
 
@@ -32,4 +33,7 @@
 	else{  
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
+
+
+
 
