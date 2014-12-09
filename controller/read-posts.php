@@ -12,12 +12,11 @@
 			//opens the div box and gives it the class 'posts'
 			echo "<div class='posts'>";
 			//dsiplays the title of the post
-			echo "<h1>" . $row['title'] . "</h1>";
-			echo "<h5>Posted at: " . $row['DateTime'] . "</h5>";
+			echo "<h2>" . $row['title'] . "</h2>";
 			//enters
 			echo "<br/>";
 			//displays the post
-			echo "<p>" . $row['post'] . "<p>";
+			echo "<p>" . $row['post'] . "</h1>";
 			//another enter
 			echo "</br>";
 			//closes the div box

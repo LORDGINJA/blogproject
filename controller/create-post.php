@@ -1,23 +1,11 @@
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="../css/post.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="css/boostrap.css">
-	<meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="width=320">
-	<meta charset="UTF-8">
-</head>
-<body id="viewbody">
-
-
-
 
 <?php
 	//gives access to variables listed in $connection
 	require_once(__DIR__ . "/../model/config.php"); 
+
 	
 
-	//stores title and makes it harder to hack;
+	//stores title and makes it harder to hack
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);  
 	//stores post and makes it harder to hack
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);	
@@ -30,24 +18,14 @@
 	
 	//runs if the query was stored
 	if ($query) {	
-
-		echo "<div id='viewpost'>";
 		//echoes out that the title was successfully inserted and the name of the title
-		echo "<h1>$title</h1>";
+		echo "<p>$title</p>";
 
-		
+		echo "<p>$post(10)</p>";
 		//echoes out the date and time of when the post was submitted
 		echo "Posted on: " . $date->format('M/D' . ' ' . 'd/Y') . " at " . $time->format('g:i');
 
-		echo "<p>$post</p>";
-		echo "<br>";
-		echo "<br>";
-		//echo $path . 'home.php';
-		echo "<button type='submit' class='btn btn-primary btn-lg' class='headingbutton' data-toggle='modal' data-target='#myModal'>";
-		echo "<a href='/blogproject/home.php'>Home</a>";
-		echo "</button>";
 
-		echo "</div>";
 
 	}
 	
@@ -56,8 +34,6 @@
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
-?>
 
 
-</body>
-</html>
+

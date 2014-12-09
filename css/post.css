@@ -1,5 +1,5 @@
 body{
-	background-image: url(../images/river.jpg);
+	background-image: url(../images/woodwork.jpg);
   	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -34,9 +34,4 @@ body{
 	body{
 		background-color: red;
 		}
-}
-
-#viewpost{
-	background-color: blue;
-	color: red;
 }

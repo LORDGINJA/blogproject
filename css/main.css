@@ -1,15 +1,5 @@
 body{
-	background-image: url(../images/beac.jpg);
-  	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-  	background-size: cover;
-  	font-family: 'PT Sans';
-	background-attachment: fixed;
-	min-height: 100%
-	-webkit-text-size-adjust: none;
-  	overflow-x: hidden;
-  	padding: 20px 0px 0px 20px;
+	text-align: center;
 }
 
 
