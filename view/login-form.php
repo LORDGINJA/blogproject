@@ -2,14 +2,9 @@
 	require_once(__DIR__ ."/../model/config.php");
 ?>
 
-<h1>REGISTER</h1>
-<!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
-<form method="post" action="<?php echo $path . "controller/create-user.php";?> ">
-	<div>
-		<!-- input box for user's email -->
-		<label for="email">Email: </label>
-		<input type="text" name="email"/>
-	</div>
+<h1>Login</h1>
+<!-- creates the login page for users to sign in -->
+<form method="post" action="<?php echo $path . "controller/login-user.php" ?>">
 	<div>
 		<!-- input box for user's username  -->
 		<label for="username">Username: </label>
@@ -21,7 +16,7 @@
 		<input type="password" name="password"/>
 	</div>
 	<div>
-		<!-- button to submit previous three input values -->
+		<!-- button to submit previous two input values -->
 		<button type="submit">Submit</button>
 	</div>
 </form>
