@@ -5,7 +5,7 @@
 			<!-- links css to home page -->
 			<link rel="stylesheet" type="text/css" href="css/post.css"> 
 			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-			<link rel="stylesheet" type="text/css" href="css/boostrap.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 			<meta name="viewport" content="width=device-width">
 			<meta name="viewport" content="width=320">
 			<meta charset="UTF-8">
