@@ -22,7 +22,6 @@
 			echo "</br>";
 			//closes the div box
 			echo "</div>";
-			echo ;
 		}
 
 	}
