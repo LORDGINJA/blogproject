@@ -10,11 +10,11 @@
 
 
 	//creates the salt, which adds a bunch of random integers and letters to my password, making it harder to guess
-	$salt = "$5$" . "rounds = 5000$" . uniqid(mt_rand(), true) . "$";
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
 	//combines the password and the salt to make an encrypted password
 	$hashedPassword = crypt($password, $salt);
 	//a query that inserts into the users' table
-	$query = $_SESSION["connection"]->query("INSERT INTO users SET"
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
 		//sets email
 		. "email = '$email', "
 		//sets username
@@ -22,14 +22,14 @@
 		//sets password
 		. "password = '$hashedPassword', "
 		//sets salt
-		. "salt = '$salt' ");
+		. "salt = '$salt'");
 
 	//checks to see if the query is working
 	if ($query) {
-		//echo "Successfully created user: $username";
+		echo "Successfully created user: $username";
 	}
 	//if the query isnt working, says why not
 	else{
-		//echo "<p>" . $_SESSION["connection"]->error . "</p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
