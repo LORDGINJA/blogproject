@@ -1,5 +1,13 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); 
+	require_once(__DIR__ . "/../controller/login-verify");
+	//runs if the user hasn't logged in
+	if (!authenticateUser()) {
+		//sends the user back to the home page
+		header("Location: " . $path . "home.php");
+		//eliminate the page from loading
+		die();
+	}
 ?>
 
 <h1>Create A Blog Post</h1>

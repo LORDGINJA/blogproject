@@ -26,10 +26,10 @@
 
 	//checks to see if the query is working
 	if ($query) {
-		echo "Successfully created user: $username";
+		//echo "Successfully created user: $username";
 	}
 	//if the query isnt working, says why not
 	else{
-		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+		//echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 

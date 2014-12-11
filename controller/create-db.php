@@ -1,6 +1,14 @@
 <?php
 	//connects this file to the config file
 	require_once(__DIR__ . "/../model/config.php"); 
+	require_once(__DIR__ . "/../controller/login-verify");
+	//runs if the user hasn't logged in
+	if (!authenticateUser()) {
+		//sends the user back to the home page
+		header("Location: " . $path . "home.php");
+		//eliminate the page from loading
+		die();
+	}
 
 	$query = $_SESSION["connection"]->query("CREATE TABLE posts ("
  			//creates an id for each blogpost.  id cannot be null.  increments id integers
@@ -16,11 +24,11 @@
 
 	//runs if the table is working
 	if($query){  
-   		echo "<p>Succesfully create table: posts</p>";
+   		//echo "<p>Succesfully create table: posts</p>";
 	}
 	//says if the table already exists or if there is an error
 	else{  
-		echo " <p>" . $_SESSION["connection"]->error . "</p>";
+		//echo " <p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
 	//creating a table to store users' usernames, emails, and passwords in phpMyAdmin.  pretty much the same as previous table
@@ -34,11 +42,11 @@
 
 	//lets me know that the users' database has been created
 	if($query){
-		echo "<p> Successfully created table: users </p>";
+		//echo "<p> Successfully created table: users </p>";
 	}
 
 
 	//if the database hasn't been created, this echoes out the error
 	else{
-		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+		//echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
