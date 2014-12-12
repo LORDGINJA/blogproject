@@ -440,3 +440,81 @@
           box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
+
+
+@mixin stripes()
+{
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 25%, #000000 26%, #000000 74%, #ffffff 75%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(25%,#ffffff), color-stop(26%,#000000), color-stop(74%,#000000), color-stop(75%,#ffffff), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 25%,#000000 26%,#000000 74%,#ffffff 75%,#ffffff 100%);
+  background: -o-linear-gradient(top, #ffffff 0%,#ffffff 25%,#000000 26%,#000000 74%,#ffffff 75%,#ffffff 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%,#ffffff 25%,#000000 26%,#000000 74%,#ffffff 75%,#ffffff 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#ffffff 25%,#000000 26%,#000000 74%,#ffffff 75%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+
+  background-size: 20px;
+  background-position: center;
+}
+
+  
+  .clock
+  {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+    
+    .minute,
+    .hour,
+    .inner
+    {
+      @include stripes();
+      border-radius: 50%;
+      position: absolute;
+      width: 320px;
+      height: 320px;
+    }
+    
+    .hour
+    {
+      width: 210px;
+      height: 210px;
+      left: 55px;
+      top: 55px;
+    }
+    
+    .inner
+    {
+      -ms-transform: rotate( 90deg );
+      -moz-transform: rotate( 90deg );
+      -webkit-transform: rotate( 90deg );
+      width: 105px;
+      height: 105px;
+      left: 108px;
+      top: 108px;
+    }
+    
+    .minute:before,
+    .hour:before
+    {
+      content: '';
+      display: block;
+      background-color: red;
+      width: 10px;
+      height: 56px;
+      -ms-transform: rotate( 90deg );
+      -moz-transform: rotate( 90deg );
+      -webkit-transform: rotate( 90deg );
+      transform: rotate( 90deg );
+      position: absolute;
+      top: 132px;
+      left: 288px;
+    }
+
+    .hour:before
+    {
+      top: 77px;
+      left: 178px;
+    }
+  
+}

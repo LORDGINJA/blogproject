@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="../css/post.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="../css/boostrap.css">
-	<meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="width=320">
-	<meta charset="UTF-8">
-</head>
-<body>
-
 
 
 
@@ -43,5 +31,3 @@
 	}
 ?>
 
-	</body>
-</html>
