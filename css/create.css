@@ -1,5 +1,5 @@
 body{
-	background-image: url(../images/river.jpg);
+	background-image: url(../images/island.jpg);
   	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -10,16 +10,6 @@ body{
 	-webkit-text-size-adjust: none;
   	overflow-x: hidden;
 	text-align: center;
-}
-
-#post{
-	margin: 15px;
-	color: green;
-	font-size: 25px;
-}
-
-#titlename{
-	background-color: black;
 	color: white;
 }
 
@@ -36,27 +26,18 @@ body{
 		}
 }
 
-#viewpost{
-	background-color: blue;
-	color: red;
-}
 
-.register{
-	text-align: center;
-}
-
-#email{
-	width: 1324px;
-	margin-top: 10px;
-}
-
-#username{
-	width: 1290px;
-		margin-top: 10px;
+header{
+	margin: 10px;
 
 }
 
-#password{
-	width: 1290px;
-	margin-top: 10px;
+.links{
+	opacity: .5;
+
+}
+
+#message{
+	margin-bottom: 10px;
+
 }
