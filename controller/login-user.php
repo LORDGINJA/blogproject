@@ -33,7 +33,7 @@
 				if ($row["password"] === crypt($password, $row["salt"]) ){
 					//only allows users to log in
 					$_SESSION["authenticated"] = true;
-					echo "<p> You have successfully logged on!</p>";				
+					echo "<p> You have successfully logged in!</p>";				
 				}
 
 				else{

@@ -17,7 +17,6 @@
 			//dsiplays the title of the post
 			echo "<h1>" . $row['title'] . "</h1>";
 			echo "<h5>Posted at: " . $row['DateTime'] . "</h5>";
-			//echo "<h5>" . $row['username'] . "</h5>";
 			//enters
 			echo "<br/>";
 			//displays the post

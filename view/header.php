@@ -28,7 +28,7 @@
 					<a href="<?php echo $path . "login.php"?>"> <span class="glyphicon glyphicon-log-in"></span></p>Login </a>
 				</button>
 				<button type="button" class="btn btn-default btn-lg link">
-					<a href="<?php echo $path . "/controller/logout-.php"?>"><span class="glyphicon glyphicon-log-out"></span></p> Logout </a>
+					<a href="<?php echo $path . "controller/logout-user.php"?>"><span class="glyphicon glyphicon-log-out"></span></p> Logout </a>
 				</button>
 			</ul>
 		</div>
@@ -41,7 +41,7 @@
 			  <div class="square square-5"></div>
 			  <div class="square square-6"></div>
 			  <div class="circle">
-			    <h1>Hover me...</h1>
+			    <img src="https://acanvasoftheminds.files.wordpress.com/2014/11/dont-raise-your-voice.jpg" class="img-circle">
 			  </div>
 		</div>
 						

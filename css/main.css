@@ -52,6 +52,16 @@ body{
 	width: 665px;
 }
 
+footer{
+	text-align: right;
+	padding: 5px;
+	color: white;
+}
+
+.navbutton{
+	margin-left: 150px;
+	opacity: .6;
+}
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////*/
@@ -222,3 +232,5 @@ body{
 	color: #21626f;
 	text-decoration: underline;
 }
+
+

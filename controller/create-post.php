@@ -42,11 +42,11 @@
 		//runs if the query was stored
 		if ($query) {	
 
-			echo "<div id='viewpost'>";
+			echo "<div>";
 			//echoes out that the title was successfully inserted and the name of the title
 			echo "<h1>$title</h1>";	
 			//echoes out the date and time of when the post was submitted
-			echo "Posted on: " . $date->format('M/D' . ' ' . 'd/Y') . " at " . $time->format('g:i');
+			echo "Posted on: " . $date->format('m/D' . ' ' . 'd/Y') . " at " . $time->format('g:i');
 			echo "<br>";
 			echo "<p>$post</p>";
 			echo "</div>";

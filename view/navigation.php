@@ -13,7 +13,7 @@
 <nav>
 	<ul>
 		<!-- links the config file to the home page -->
-		<button type="button" class="btn btn-default btn-lg">
+		<button type="button" class="btn btn-default btn-lg navbutton">
 			<a href="<?php echo $path . "post.php"?>"> Blog Post form </a>
 		</button>
 	</ul>
