@@ -1,6 +1,6 @@
 
 	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-	<html lang="en" class="no-js">
+	<html>
 		<head>
 			<!-- links css to home page -->
 			<link rel="stylesheet" type="text/css" href="css/main.css"> 
@@ -33,8 +33,7 @@
 			</ul>
 		</div>
 
-
-			<div id="homemogul" class="button active">
+		<div id="homemogul" class="button active">
 			  <div class="square square-1"></div>
 			  <div class="square square-2"></div>
 			  <div class="square square-3"></div>
@@ -44,5 +43,6 @@
 			  <div class="circle">
 			    <h1>Hover me...</h1>
 			  </div>
-			</div>
-							
+		</div>
+						
+		

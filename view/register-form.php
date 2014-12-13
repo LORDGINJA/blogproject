@@ -22,10 +22,9 @@
 	</div>
 	<div>
 		<!-- button to submit previous three input values -->
-		<button type="submit">Submit</button>
+		<button type="submit" class="btn btn-primary btn-lg" class="headingbutton" data-toggle="modal" data-target="#myModal">
+			Submit
+		</button>
 	</div>
 </form>
 
-<button type="button" class="btn btn-default btn-lg">
-			<a href="<?php echo $path . "post.php"?>"> Blog Post form </a>
-		</button>

@@ -13,14 +13,12 @@ body{
 }
 
 #post{
-	margin: 15px;
-	color: green;
-	font-size: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-#titlename{
-	background-color: black;
-	color: white;
+#title{
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 40em) {
@@ -36,10 +34,6 @@ body{
 		}
 }
 
-#viewpost{
-	background-color: blue;
-	color: red;
-}
 
 .register{
 	text-align: center;
@@ -59,4 +53,9 @@ body{
 #password{
 	width: 1290px;
 	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.headingbutton{
+	
 }
