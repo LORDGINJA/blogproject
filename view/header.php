@@ -40,9 +40,32 @@
 			  <div class="square square-4"></div>
 			  <div class="square square-5"></div>
 			  <div class="square square-6"></div>
-			  <div class="circle">
+			  <div class="circle" data-toggle="modal" data-target="#myModal">
 			    <img src="https://acanvasoftheminds.files.wordpress.com/2014/11/dont-raise-your-voice.jpg" class="img-circle">
 			  </div>
 		</div>
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						        <h4 class="modal-title" id="myModalLabel">This is my blog project made for my app academy class. Enjoy.</h4>
+						      </div>
+						      <div class="modal-body">
+						        <img class="img-responsive"	id="mogulpara"	src="http://quotesnsmiles.com/wp-content/uploads/2012/12/Albert-Einstein-Simple-Picture-Quote.jpg">
+
+				
+								<p>
+									This blog is for posting your opinions.  Every post is anonymous, whether you want it or not,
+									so post without fear of being embarrassed.  This is a a non-biased blog, so all sides of an argument are welcome, 
+									as long as you have sufficient evidence and plenty of logic backing your thoughts.  If you see something that you
+									think is wrong and disagree with, don't get mean, don't just state that's it's wrong, prove it calmly.  Do not assume that you are right.
+								</p>
+						      </div>
+						      
+						    </div>
+						  </div>
+						</div>
 						
 		

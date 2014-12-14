@@ -63,7 +63,18 @@ footer{
 	opacity: .6;
 }
 
+#mogulpara{
+	padding-left: 60px;
+}
 
+#myModal{
+	opacity: .8;
+	margin-top: 25px;
+}
+
+p {
+    text-indent: 20px;
+}
 /*//////////////////////////////////////////////////////////////////////////////////////////*/
 
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script);
