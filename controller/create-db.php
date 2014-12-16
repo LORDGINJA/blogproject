@@ -1,14 +1,6 @@
 <?php
 	//connects this file to the config file
 	require_once(__DIR__ . "/../model/config.php"); 
-	// require_once(__DIR__ . "/../controller/login-verify.php");
-	// //runs if the user hasn't logged in
-	// if (!authenticateUser()) {
-	// 	//sends the user back to the home page
-	// 	header("Location: " . $path . "home.php");
-	// 	//eliminate the page from loading
-	// 	die();
-	// }
 
 	$query = $_SESSION["connection"]->query("CREATE TABLE posts ("
  			//creates an id for each blogpost.  id cannot be null.  increments id integers
@@ -51,4 +43,4 @@
 		//echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
 
-	?>
+?>

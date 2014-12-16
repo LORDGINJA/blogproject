@@ -27,9 +27,9 @@
 		<textarea name="post"></textarea> 
 	</div>
 	<div>
-	<!-- Inserts a submit button in the form page -->
-	<button type="submit" class="btn btn-primary btn-lg" class="headingbutton" data-toggle="modal" data-target="#myModal">
-		Submit
-	</button>
+		<!-- Inserts a submit button in the form page -->
+		<button type="submit" class="btn btn-primary btn-lg" class="headingbutton" data-toggle="modal" data-target="#myModal">
+			Submit
+		</button>
 	</div>
 </form>

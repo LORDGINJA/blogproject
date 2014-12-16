@@ -1,4 +1,9 @@
-
+					<!-- ends the divs and paragraph from navagation.php -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 <?php
@@ -13,7 +18,7 @@
 		//creates a loop that runs while there is a post that is able to be selected
 		while($row = mysqli_fetch_array($result)){
 			//opens the div box and gives it the class 'posts'
-			echo "<div class='posts'>";
+			echo "<div id class='posts readmore-js-section readmore-js-collapsed'>";
 			//dsiplays the title of the post
 			echo "<h1>" . $row['title'] . "</h1>";
 			echo "<h5>Posted at: " . $row['DateTime'] . "</h5>";
@@ -21,6 +26,7 @@
 			echo "<br/>";
 			//displays the post
 			echo "<p>" . $row['post'] . "<p>";
+			echo "<a href='#' class='readmore-js-toggle'>More examples and options</a>";
 			//another enter
 			echo "</br>";
 			//closes the div box

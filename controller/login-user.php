@@ -5,17 +5,17 @@
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css.map">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css.map">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-		<title>Blogs</title>
 		<meta name="viewport" content="width=device-width">
 		<meta name="viewport" content="width=320">
 		<meta charset="UTF-8">
+		<title>Blogs</title>
 	</head>
 
 	<header>
 		<h1>WELCOME!</h1>
 	</header>
-	<body>
 
+	<body>
 
 		<?php 
 			//gives access to database
@@ -53,6 +53,5 @@
 				</button>
 			</ul>
 		</div>
-
 	</body>
 </html>

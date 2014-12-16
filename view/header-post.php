@@ -11,9 +11,6 @@
 			<meta charset="UTF-8">
 			<title>Blogs</title>
 		</head>
-		
-		<header>
-			
-		</header>
+
 		<body>
 			

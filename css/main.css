@@ -36,6 +36,7 @@ body{
 	float: left;
 	margin-top: -20px;
 	width: 600px;
+	font-size: 45px;
 }
 
 .links{
@@ -58,9 +59,12 @@ footer{
 	color: white;
 }
 
-.navbutton{
-	margin-left: 150px;
-	opacity: .6;
+nav{
+	text-align: center;
+}
+
+li{
+	opacity: .7;
 }
 
 #mogulpara{

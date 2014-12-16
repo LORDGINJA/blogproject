@@ -5,15 +5,16 @@
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css.map">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css.map">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-		<title>Blogs</title>
 		<meta name="viewport" content="width=device-width">
 		<meta name="viewport" content="width=320">
 		<meta charset="UTF-8">
+		<title>Blogs</title>
 	</head>
 
 	<header>
 		<h1>CONGRATULATIONS!</h1>
 	</header>
+
 	<body>
 
 		<?php
@@ -23,9 +24,6 @@
 			$email = filter_input(INPUT_POST, "email" , FILTER_SANITIZE_EMAIL);
 			$username = filter_input(INPUT_POST, "username" , FILTER_SANITIZE_STRING);
 			$password = filter_input(INPUT_POST, "password" , FILTER_SANITIZE_STRING);
-
-			//echo $email . " - " . $username . " - " . $password;
-
 
 			//creates the salt, which adds a bunch of random integers and letters to my password, making it harder to guess
 			$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
@@ -62,6 +60,5 @@
 				</button>
 			</ul>
 		</div>
-
 	</body>
 </html>

@@ -6,7 +6,6 @@
 	//prevents hackers from using previusly authenticated users to access the website
 	session_regenerate_id(true);
 
-
 	//displays the post page
 	$path = "/blogproject/"; 
 	//a variable that stores the string "localhost"
@@ -20,7 +19,6 @@
 
 	//checks if the session variable exists.  if it doesn't, the connection gets created
 	if(!isset($_SESSION["connection"])){
-
 		$connection = new Database($host, $username, $password, $database);
 		//session variable.  saves database object so that it only gets created once
 		$_SESSION["connection"] = $connection;
