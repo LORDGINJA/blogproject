@@ -8,7 +8,7 @@
         moreLink: '<a href="#">Read the Content</a>',
         lessLink: '<a href="#">Close</a>',
         embedCSS: true,
-        sectionCSS: 'display: block;',
+        sectionCSS: 'display: block; ',
         startOpen: false,
         expandedClass: 'readmore-js-expanded',
         collapsedClass: 'readmore-js-collapsed',

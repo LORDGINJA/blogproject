@@ -909,8 +909,10 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #00005D;
   text-decoration: none;
+  width: 150px;
+  font-family: 'Black Ops One', cursive;
 }
 a:hover,
 a:focus {
