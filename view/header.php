@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
-		<meta name="description" content="A smooth, lightweight jQuery plugin for collapsing and expanding long blocks of text with &#8220;Read more&#8221; and &#8220;Close&#8221; links.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/main.css"> 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
