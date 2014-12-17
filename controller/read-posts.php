@@ -18,19 +18,18 @@
 		//creates a loop that runs while there is a post that is able to be selected
 		while($row = mysqli_fetch_array($result)){
 			//opens the div box and gives it the class 'posts'
-			echo "<div id class='posts readmore-js-section readmore-js-collapsed'>";
+			echo "<article class='posts readmore-js-section readmore-js-collapsed'>";
 			//dsiplays the title of the post
 			echo "<h1>" . $row['title'] . "</h1>";
 			echo "<h5>Posted at: " . $row['DateTime'] . "</h5>";
 			//enters
-			echo "<br/>";
+			echo "</br>";
 			//displays the post
-			echo "<p>" . $row['post'] . "<p>";
-			echo "<a href='#' class='readmore-js-toggle'>More examples and options</a>";
+			echo "<p>" . $row['post'] . "</p>";
 			//another enter
 			echo "</br>";
 			//closes the div box
-			echo "</div>";
+			echo "</article>";
 		}
 
 	}
